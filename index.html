@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moosha | Dirty Soda & Event Bar</title>
+  <meta name="description" content="Moosha brings bold, fizzy, custom soda creations to pop-ups and private events." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">Moosha</a>
+
+    <nav class="nav">
+      <a href="#">Events</a>
+      <a href="#">Where to catch us</a>
+      <a href="#">Gallery</a>
+      <a class="btn btn-small" href="#enquire">Enquire</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Dirty Soda. Big energy. Zero fuss.</p>
+        <h1>Moosha brings the fizz to your next event.</h1>
+        <p class="lead">
+          Custom-crafted sodas, bold flavours, and a pop-up bar that turns any space into a moment.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#enquire">Enquire now</a>
+          <a class="btn btn-ghost" href="#next">Where to catch us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What we do</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Private events</h3>
+            <p>Birthdays, celebrations, brand moments. We show up, serve, and sparkle.</p>
+          </div>
+          <div class="card">
+            <h3>Pop-ups</h3>
+            <p>Catch us at markets and community events with a rotating menu.</p>
+          </div>
+          <div class="card">
+            <h3>Custom menus</h3>
+            <p>Signature drinks, themed flavours, and options for all tastes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Fan favourites</h2>
+        <p class="muted">A little teaser. The full menu is coming soon.</p>
+
+        <div class="grid-3">
+          <div class="tile">
+            <h3>Classic Vanilla</h3>
+            <p>Clean, creamy, nostalgic.</p>
+          </div>
+          <div class="tile">
+            <h3>Citrus Pop</h3>
+            <p>Zesty, sharp, refreshing.</p>
+          </div>
+          <div class="tile">
+            <h3>Berry Glow</h3>
+            <p>Sweet with a bright finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="next">
+      <div class="container">
+        <h2>Where to catch us next</h2>
+        <div class="list">
+          <div class="list-item">
+            <div>
+              <strong>Greenwich Market</strong>
+              <div class="muted">Date TBC</div>
+            </div>
+            <span class="pill">Pop-up</span>
+          </div>
+
+          <div class="list-item">
+            <div>
+              <strong>Private booking</strong>
+              <div class="muted">Now taking enquiries</div>
+            </div>
+            <span class="pill">Events</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="enquire">
+      <div class="container">
+        <h2>Enquire</h2>
+        <p class="muted">Tell us the vibe, the date, and the guest count. We will reply with options.</p>
+
+        <form class="form">
+          <label>
+            Your name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Event date
+            <input type="date" name="date" />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Location, guest count, theme, any must-have flavours..."></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send enquiry</button>
+        </form>
+
+        <p class="fineprint">
+          Prefer email? <a href="mailto:hello@yourdomain.co.uk">hello@yourdomain.co.uk</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Moosha Ltd</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
