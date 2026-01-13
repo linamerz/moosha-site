@@ -3,84 +3,84 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Moosha | London's Dirty Soda Bar</title>
-  <meta name="description" content="Moosha brings bold, fizzy, custom soda creations to pop-ups and private events." />
+  <title>moosha | curated drinks across London</title>
+  <meta name="description" content="delivering curated drinking experience across London" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
+<!-- Title, slogan, and menu bar -->
 <body>
   <header class="site-header">
     <div class="brand">
-      <a class="brand__name" href="home.html">Moosha</a>
-      <p class="brand__tagline">Dirty sodas come to London for all the cool cats and kittens</p>
+      <a class="brand__name" href="home.html">moosha</a>
+      <p class="brand__tagline">drinks, made your way</p>
     </div>
+      <hr class="menu" />
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link nav__link--active" href="index.html">Home</a>
+        <a class="nav__link" href="menu.html">Menu</a>
+        <a class="nav__link" href="events.html">Events</a>
+        <a class="nav__link" href="location.html">Our Next Stop</a>
+        <a class="nav__link" href="gallery.html">Gallery</a>
+      </nav>
+      <hr class="rule" />
+    </header>
 
-    <hr class="menu" />
-
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="nav__link nav__link--active" href="index.html">Home</a>
-      <a class="nav__link" href="menu.html">Menu</a>
-      <a class="nav__link" href="events.html">Events</a>
-      <a class="nav__link" href="location.html">Our Next Stop</a>
-      <a class="nav__link" href="gallery.html">Gallery</a>
-    </nav>
-
-    <hr class="rule" />
-  </header>
-
+<!-- Page contents - page center--> 
   <main>
     <section class="hero">
       <div class="hero-inner">
-        <p class="eyebrow">Dirty Sodas. More Energy. More Fun.</p>
-        <h1>Moosha brings the energy to your next event.</h1>
-        <p class="lead">Custom-crafted sodas with BOLD flavours.<br>
-          Serving pop-ups and event spaces across London.
+        <h1>moosha brings the energy to  your event</h1>
+        <p class="lead">Custom-crafted sodas with BOLD flavours<br>
+          Serving pop-ups and event spaces across London!
         </p>
-
+        <p class="eyebrow">made with love & served with energy</p>
         <img class="hero-image" src="images/sippingMoosha.png" alt="Moosha walking cat logo" />
       </div>
     </section>
 
+
+<!-- Page contents - bottom of page--> 
     <section class="section">
       <div class="container">
-        <h2>What We Do</h2>
-
+        <h2>moosha delivers</h2>
         <div class="grid-3">
+  <!-- Page contents - events icon--> 
           <a href="events.html" class="card-link">
             <div class="card">
               <h3>Private Events</h3>
-              <p>Birthdays, celebrations, brand moments. We show up, serve, and provide energy.</p>
+              <p>Birthdays, celebrations, brand moments. We show up, serve, and provide energy</p>
             </div>
           </a>
-
+  <!-- Page contents - pop-up icon--> 
           <a href="find-us.html" class="card-link">
             <div class="card">
-              <h3>Pop-ups</h3>
-              <p>Catch us at markets and community events across London!</p>
+              <h3>Pop-Ups</h3>
+              <p>Catch us at markets and community events across London</p>
             </div>
           </a>
-
+  <!-- Page contents - menu icon-->           
           <a href="menu.html" class="card-link">
             <div class="card">
               <h3>Custom Menus</h3>
-              <p>Signature drinks, themed flavours, with options for all tastes.</p>
+              <p>Curating signature drinks, themed flavours, with options for all tastes</p>
             </div>
           </a>
+
         </div>
       </div>
     </section>
   </main>
 
+<!-- Page footer --> 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy">© <span id="year"></span> Moosh Ltd <br> Company No. 14851256 · Registered in England & Wales</p>
+      <p class="footer-copy">© <span id="year"></span> moosha Ltd <br> Company No. 14851256 · Registered in England & Wales</p>
 
       <div class="footer-links" aria-label="Social links">
         <a href="https://www.instagram.com/moosha" rel="noopener">Instagram</a>
@@ -91,8 +91,7 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+  <script> document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
