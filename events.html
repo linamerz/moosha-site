@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Moosha | London's Dirty Soda Bar</title>
-  <meta name="description" content="Moosha brings bold, fizzy, custom soda creations to pop-ups and private events." />
+  <title>moosha | curated drinks across London</title>
+  <meta name="description" content="delivering curated drinking experience across London" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,72 +13,132 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
+<!-- Title, slogan, and menu bar -->
 <body>
   <header class="site-header">
     <div class="brand">
-      <a class="brand__name" href="home.html">Moosha</a>
-      <p class="brand__tagline">Dirty sodas come to London for all the cool cats and kittens</p>
+      <a class="brand__name" href="home.html">moosha</a>
+      <p class="brand__tagline">drinks, made your way</p>
     </div>
+      <hr class="menu" />
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link"  href="home.html">Home</a>
+        <a class="nav__link" href="menu.html">Menu</a>
+        <a class="nav__link nav__link--active" href="events.html">Events</a>
+        <a class="nav__link" href="location.html">Next Stop</a>
+        <a class="nav__link" href="gallery.html">Gallery</a>
+      </nav>
+      <hr class="rule" />
+    </header>
 
-    <hr class="menu" />
-
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="nav__link nav__link--active" href="index.html">Home</a>
-      <a class="nav__link" href="menu.html">Menu</a>
-      <a class="nav__link" href="events.html">Events</a>
-      <a class="nav__link" href="location.html">Our Next Stop</a>
-      <a class="nav__link" href="gallery.html">Gallery</a>
-    </nav>
-
-    <hr class="rule" />
-  </header>
-
+<!-- Page contents - top of page (info)--> 
   <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">Dirty Sodas. More Energy. More Fun.</p>
-        <h1>Moosha brings the energy to your next event.</h1>
-        <p class="lead">Custom-crafted sodas with BOLD flavours.<br>
-          Serving pop-ups and event spaces across London.
-        </p>
-
-        <img class="hero-image" src="images/sippingMoosha.png" alt="Moosha walking cat logo" />
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
-        <h2>What We Do</h2>
-
-        <div class="grid-3">
-          <a href="events.html" class="card-link">
-            <div class="card">
-              <h3>Private Events</h3>
-              <p>Birthdays, celebrations, brand moments. We show up, serve, and provide energy.</p>
-            </div>
-          </a>
-
-          <a href="find-us.html" class="card-link">
-            <div class="card">
-              <h3>Pop-ups</h3>
-              <p>Catch us at markets and community events across London!</p>
-            </div>
-          </a>
-
-          <a href="menu.html" class="card-link">
-            <div class="card">
-              <h3>Custom Menus</h3>
-              <p>Signature drinks, themed flavours, with options for all tastes.</p>
-            </div>
-          </a>
+        <div class="page-intro">
+          <h1>Book moosha for your upcoming event</h1>
+          <p class="lead">Whatever you're planning, we are here to help you deliver an unforgettable event that's full of flavour and energy
+            <img class="hero-image" src="images/partyPose.png" alt="moosha with part hat logo">
+            <p>Tell us what you’re planning and we can get the ball rolling</p>
         </div>
+
+<!-- box contents - for caffiene warning --> 
+  <div class="grid-2">
+          <div class="card card--left">
+            <h2>Before you book</h2>
+            <p class="muted">
+              Not sure what you need yet? No problem. <br>Give us the basics and we’ll guide you.<br>
+            <p><strong>Notice: </strong>Due to the Zoomies drink menu containg a high level of caffiene. It is <strong>not recommended </strong>for children, pregnant individuals, or those sensitive to caffeine.
+          </div>
+          </div>
+
+  <div class="grid-2">
+          <div class="card card--right">
+            <h2>Event enquiry form</h2>
+
+<!-- Netlify Forms Designed Form-->
+            <form
+              name="event-enquiry"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/thank-you.html"
+              class="form"
+            >
+              <!-- Required hidden input for Netlify -->
+              <input type="hidden" name="form-name" value="event-enquiry">
+
+              <!-- Honeypot field (hidden from real users) -->
+              <p class="hidden">
+                <label>Don’t fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-row">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone number (optional)</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+
+              <div class="form-row">
+                <label for="eventType">Event type</label>
+                <select id="eventType" name="eventType" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option value="Private event">Private event</option>
+                  <option value="Corporate event">Corporate event</option>
+                  <option value="Brand activation">Brand activation</option>
+                  <option value="Market / community event">Market / community event</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="date">Event date (optional)</label>
+                <input id="date" name="date" type="date">
+              </div>
+
+              <div class="form-row">
+                <label for="location">Location / venue (borough or postcode is perfect)</label>
+                <input id="location" name="location" type="text" autocomplete="street-address" required>
+              </div>
+
+              <div class="form-row">
+                <label for="guests">Estimated guests</label>
+                <input id="guests" name="guests" type="number" min="1" placeholder="e.g. 80" required>
+              </div>
+
+              <div class="form-row">
+                <label for="message">Tell us about your event</label>
+                <textarea id="message" name="message" rows="5" placeholder="Time, vibe, any themes, what you’re imagining..." required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn" type="submit">Send enquiry</button>
+              </div>
+
+              <p class="form-note muted">
+                We usually reply within 1–2 working days. If your enquiry is urgent,
+                <a class="btn" href="mailto:hello@moosha.co.uk?subject=Event%20Enquiry">please send us an email.</a>
+            </form>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
 
+<!-- Page footer --> 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy">© <span id="year"></span> Moosh Ltd <br> Company No. 14851256 · Registered in England & Wales</p>
+      <p class="footer-copy">© <span id="year"></span> moosha ltd <br> Company No. 14851256 · Registered in England & Wales</p>
 
       <div class="footer-links" aria-label="Social links">
         <a href="https://www.instagram.com/moosha" rel="noopener">Instagram</a>
@@ -90,8 +149,7 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+  <script> document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

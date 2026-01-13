@@ -129,7 +129,7 @@ h1 {
 
 .hero-image {
   display: block;
-  margin: 1.5rem auto 0;
+  margin: 1rem auto 0;
   width: 200px;
 }
 
@@ -241,10 +241,14 @@ main {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.4rem;
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center; 
+  padding-top: 2rem;
+  border-top: 2px solid var(--line);
+  padding-block: 2rem;
 }
+
 
 .list {
   margin: 0;
@@ -252,8 +256,9 @@ main {
   text-align: left;
 }
 
-.muted {
-  color: var(--muted);
+.muted a:hover {
+  color: var(--text);
+  text-decoration: underline;
 }
 
 /* Form styling */
