@@ -135,8 +135,8 @@ h1 {
 
 /* Sections */
 .section {
-  padding: 2.6rem;
-  border-top: 1px solid var(--line);
+  border-top: 2px solid var(--line);
+  padding-block: 2.1rem;
 }
 
 h2 {
@@ -175,7 +175,7 @@ h3 {
 .card:hover,
 .card-link:hover .card {
   background: var(--card-hover);
-  transform: translateY(-2px);
+  transform: translateY(2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
