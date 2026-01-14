@@ -3,51 +3,120 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Moosha | London's Dirty Soda Bar</title>
-  <meta name="description" content="Moosha brings bold, fizzy, custom soda creations to pop-ups and private events." />
+  <title>moosha | curated drinks across London</title>
+  <meta name="description" content="delivering curated drinking experience across London" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/slideshow.js" defer></script>
+
 </head>
 
+<!-- Title, slogan, and menu bar -->
 <body>
   <header class="site-header">
     <div class="brand">
-      <a class="brand__name" href="home.html">Moosha</a>
-      <p class="brand__tagline">Dirty sodas come to London for all the cool cats and kittens</p>
+      <a class="brand__name" href="home.html">moosha</a>
+      <p class="brand__tagline">drinks, made your way</p>
     </div>
+      <hr class="menu" />
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link" href="home.html">Home</a>
+        <a class="nav__link" href="menu.html">Menu</a>
+        <a class="nav__link" href="events.html">Events</a>
+        <a class="nav__link" href="location.html">Next Stop</a>
+       <a class="nav__link nav__link--active"  href="gallery.html">Gallery</a> 
+      </nav>
+      <hr class="rule" />
+    </header>
 
-    <hr class="menu" />
-
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="nav__link nav__link--active" href="index.html">Home</a>
-      <a class="nav__link" href="menu.html">Menu</a>
-      <a class="nav__link" href="events.html">Events</a>
-      <a class="nav__link" href="location.html">Our Next Stop</a>
-      <a class="nav__link" href="gallery.html">Gallery</a>
-    </nav>
-
-    <hr class="rule" />
-  </header>
-
+<!-- Page contents - page center--> 
   <main>
     <section class="hero">
       <div class="hero-inner">
-        <p class="eyebrow">Dirty Sodas. More Energy. More Fun.</p>
-        <h1>Moosha brings the energy to your next event.</h1>
-        <p class="lead">Custom-crafted sodas with BOLD flavours.<br>
-          Serving pop-ups and event spaces across London.
-        </p>
-
-        <img class="hero-image" src="images/sippingMoosha.png" alt="Moosha walking cat logo" />
+        <h1>explore our recent events</h1>
+        <p class="lead">Take a look at some of our most recent events<br>Always made with love & served with energy!</p>
+         <!--<img class="hero-image" src="images/yarnPose.png" alt="Moosha playing with a yarn" />-->
       </div>
     </section>
 
+<!-- adding a slideshow --> 
+<!-- Slideshow -->
+<section class="section">
+  <div class="container">
+    <div class="slideContainer">
+
+      <!-- Full-width images -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/yarnPose.png" style="width:100%" alt="Moosha yarn pose">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/cheersPose.png" style="width:100%" alt="Moosha cheers pose">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/partyPose.png" style="width:100%" alt="Moosha party pose">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/lovePose.png" style="width:100%" alt="Moosha love pose">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/drivingPose.png" style="width:100%" alt="Moosha driving pose">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/constructionPose.png" style="width:100%" alt="Moosha construction pose">
+      </div>
+
+      <!-- Next/prev buttons -->
+      <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</a>
+
+      <!-- Caption -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnails -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/yarnPose.png" style="width:100%" onclick="currentSlide(1)" alt="images coming soon">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/cheersPose.png" style="width:100%" onclick="currentSlide(2)" alt="images coming soon">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/partyPose.png" style="width:100%" onclick="currentSlide(3)" alt="images coming soon">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/lovePose.png" style="width:100%" onclick="currentSlide(4)" alt="images coming soon">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/drivingPose.png" style="width:100%" onclick="currentSlide(5)" alt="images coming soon">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/constructionPose.png" style="width:100%" onclick="currentSlide(6)" alt="images coming soon">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Selection container - same as home page --> 
     <section class="section">
       <div class="container">
         <h2>What We Do</h2>
@@ -60,7 +129,7 @@
             </div>
           </a>
 
-          <a href="find-us.html" class="card-link">
+          <a href="location.html" class="card-link">
             <div class="card">
               <h3>Pop-ups</h3>
               <p>Catch us at markets and community events across London!</p>
