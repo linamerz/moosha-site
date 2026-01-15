@@ -297,7 +297,7 @@ textarea:focus {
   display: flex;
   gap: 0.8rem;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-top: 1.2rem;
 }
 
@@ -404,4 +404,94 @@ textarea:focus {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.menu-page { text-align: center; }
+.menu-title { letter-spacing: 0.35em; margin-bottom: 0.5rem; }
+.menu-tagline { margin-top: 0; margin-bottom: 2rem; }
+
+.menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.menu-panel {
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.menu-heading {
+  text-align: center;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.menu-warning {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 1.2rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+}
+
+.menu-item-name { font-weight: 700; }
+.menu-item-desc { font-size: 0.95rem; color: var(--muted); }
+.menu-item-price { font-weight: 700; min-width: 3.2rem; text-align: right; }
+
+.menu-item--spaced { margin-top: 1rem; }
+
+.menu-extras {
+  max-width: 520px;
+  margin: 2.2rem auto 1.5rem;
+  text-align: center;
+}
+
+.menu-extras-title { margin: 0 0 0.5rem; }
+.menu-item--extras { border-top: 1px solid var(--line); padding-top: 0.9rem; }
+
+.menu-footnotes {
+  border-top: 1px solid var(--line);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.menu-pdf-link a { text-decoration: underline; }
+
+@media (max-width: 800px) {
+  .menu-columns { grid-template-columns: 1fr; }
+}
+
+/* Location page map layout */
+.location-map {
+  width: 100%;
+  height: 420px;
+  border-radius: 14px;
+}
+
+.location-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.location-note {
+  margin-top: 1rem;
+}
+
+/* Optional: tighter spacing on mobile */
+@media (max-width: 768px) {
+  .location-map {
+    height: 320px;
+  }
 }

@@ -3,84 +3,100 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Moosha | London's Dirty Soda Bar</title>
-  <meta name="description" content="Moosha brings bold, fizzy, custom soda creations to pop-ups and private events." />
+  <title>moosha | curated drinks across London</title>
+  <meta name="description" content="delivering curated drinking experience across London" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
+<!-- Title, slogan, and menu bar -->
 <body>
   <header class="site-header">
     <div class="brand">
-      <a class="brand__name" href="home.html">Moosha</a>
-      <p class="brand__tagline">Dirty sodas come to London for all the cool cats and kittens</p>
+      <a class="brand__name" href="home.html">moosha</a>
+      <p class="brand__tagline">drinks, made your way</p>
     </div>
+      <hr class="menu" />
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link" href="home.html">Home</a>
+        <a class="nav__link" href="menu.html">Menu</a>
+        <a class="nav__link" href="events.html">Events</a>
+        <a class="nav__link nav__link--active" href="location.html">Next Stop</a>
+        <a class="nav__link" href="gallery.html">Gallery</a>
+      </nav>
+      <hr class="rule" />
+    </header>
 
-    <hr class="menu" />
-
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="nav__link nav__link--active" href="index.html">Home</a>
-      <a class="nav__link" href="menu.html">Menu</a>
-      <a class="nav__link" href="events.html">Events</a>
-      <a class="nav__link" href="location.html">Our Next Stop</a>
-      <a class="nav__link" href="gallery.html">Gallery</a>
-    </nav>
-
-    <hr class="rule" />
-  </header>
-
+<!-- Page contents - page top--> 
   <main>
     <section class="hero">
       <div class="hero-inner">
-        <p class="eyebrow">Dirty Sodas. More Energy. More Fun.</p>
-        <h1>Moosha brings the energy to your next event.</h1>
-        <p class="lead">Custom-crafted sodas with BOLD flavours.<br>
-          Serving pop-ups and event spaces across London.
-        </p>
-
-        <img class="hero-image" src="images/sippingMoosha.png" alt="Moosha walking cat logo" />
+        <h1>moosha is always on the move</h1>
+        <p class="lead">Come and say <strong>Hello!</strong>
+        <p class="eyebrow">made with love & served with energy</p>
+        <img class="hero-image" src="images/cheersPose.png" alt="Moosha at the market" />
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>What We Do</h2>
+<!-- leaflet map -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2 location-grid">
 
-        <div class="grid-3">
-          <a href="events.html" class="card-link">
-            <div class="card">
-              <h3>Private Events</h3>
-              <p>Birthdays, celebrations, brand moments. We show up, serve, and provide energy.</p>
-            </div>
-          </a>
+      <!-- Left: Map -->
+      <div class="card location-map-card">
+        <div id="map" class="location-map" aria-label="Map showing our next market location"></div>
+      </div>
 
-          <a href="find-us.html" class="card-link">
-            <div class="card">
-              <h3>Pop-ups</h3>
-              <p>Catch us at markets and community events across London!</p>
-            </div>
-          </a>
+      <!-- Right: Market details -->
+      <div class="card location-details-card">
+        <h2>Next Stop</h2>
 
-          <a href="menu.html" class="card-link">
-            <div class="card">
-              <h3>Custom Menus</h3>
-              <p>Signature drinks, themed flavours, with options for all tastes.</p>
-            </div>
+        <div class="location-meta">
+          <p class="location-name"><strong></strong></p>
+  <!-- Right: Market details 
+          <p class="muted">Market address line, London, Postcode</p>
+        </div>
+
+        <div class="location-times">
+          <h3>When to catch us</h3>
+          <ul class="list">
+            <li style=""><strong>Saturday:</strong> 10:00–16:00</li>
+            <li><strong>Sunday:</strong> 11:00–15:00</li>
+          </ul>
+        </div>-->
+
+
+
+        <p class="muted location-note">
+          We move around, so check this page before you travel.
+        </p>
+        <p class="eyebrow">
+          Have an event coming up? moosha can help serve your guests with an unforgettable event that's full of flavour and energy!<br><br>
+          <a class="btn" href="mailto:hello@moosha.co.uk?subject=Event%20Enquiry"> <strong>Email us</strong> </a>to find out more.
+        </p>
+      </div>
+
+<!-- connecting to goofle map -->      
+        <div class="location-actions">
+          <a class="btn" href="https://www.google.com/maps?q=51.5074,-0.1278" target="_blank" rel="noopener noreferrer">
+            Open in Google Maps
           </a>
         </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
   </main>
 
+<!-- Page footer --> 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy">© <span id="year"></span> Moosh Ltd <br> Company No. 14851256 · Registered in England & Wales</p>
+      <p class="footer-copy">© <span id="year"></span> moosha ltd <br> Company No. 14851256 · Registered in England & Wales</p>
 
       <div class="footer-links" aria-label="Social links">
         <a href="https://www.instagram.com/moosha" rel="noopener">Instagram</a>
@@ -90,9 +106,32 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
+
+  <!-- location coordinates here --> 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+  const marketLat = 51.5074;
+  const marketLng = -0.1278;
+
+  // Create map
+  const map = L.map("map", { scrollWheelZoom: false }).setView([marketLat, marketLng], 14);
+
+  // Map tiles
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
   </script>
+
+  <!-- Pin marker
+  L.marker([marketLat, marketLng]).addTo(map)
+    .bindPopup("<strong>Moosha is here</strong><br>See you at the market!")
+    .openPopup(); 
+</script>-->
+
+  <script> document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>

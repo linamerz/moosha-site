@@ -59,14 +59,14 @@
             <h2>Event enquiry form</h2>
 
 <!-- Netlify Forms Designed Form-->
-            <form
-              name="event-enquiry"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              action="/thank-you.html"
-              class="form"
-            >
+           <form
+            name="event-enquiry"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thank-you.html"
+            class="form"
+          >
               <!-- Required hidden input for Netlify -->
               <input type="hidden" name="form-name" value="event-enquiry">
 
@@ -75,10 +75,11 @@
                 <label>Don’t fill this out: <input name="bot-field" /></label>
               </p>
 
-              <div class="form-row">
-                <label for="name">Full name</label>
-                <input id="name" name="name" type="text" autocomplete="name" required>
-              </div>
+            <!-- your form rows (name/email/etc) -->
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
 
               <div class="form-row">
                 <label for="email">Email address</label>
@@ -122,17 +123,16 @@
                 <textarea id="message" name="message" rows="5" placeholder="Time, vibe, any themes, what you’re imagining..." required></textarea>
               </div>
 
-              <div class="form-actions">
-                <button class="btn" type="submit">Send enquiry</button>
-              </div>
+            <div class="form-actions">
+              <button class="btn" type="submit">Send enquiry</button>
+            </div>
+          </form>
 
               <p class="form-note muted">
                 We usually reply within 1–2 working days. If your enquiry is urgent,
-                <a class="btn" href="mailto:hello@moosha.co.uk?subject=Event%20Enquiry"> <strong>send us an email.</strong></a>
-            </form>
+                <a class="btn" href="mailto:hello@moosha.co.uk?subject=Event%20Enquiry"> <strong>send us an email.</strong></a></p>
           </div>
         </div>
-
       </div>
     </section>
   </main>
