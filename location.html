@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="images/png" href="images/mainLogo.png">
 </head>
 
 <!-- Title, slogan, and menu bar -->
@@ -26,7 +27,7 @@
         <a class="nav__link" href="index.html">Home</a>
         <a class="nav__link" href="menu.html">Menu</a>
         <a class="nav__link" href="events.html">Events</a>
-        <a class="nav__link nav__link--active" href="location.html">Next Stop</a>
+        <a class="nav__link nav__link--active" href="location.html">Find Us</a>
         <a class="nav__link" href="gallery.html">Gallery</a>
       </nav>
       <hr class="rule" />
@@ -37,9 +38,9 @@
     <section class="hero">
       <div class="hero-inner">
         <h1>moosha is always on the move</h1>
-        <p class="lead">Come and say <strong>Hello!</strong>
-        <p class="eyebrow">made with love & served with energy</p>
+        <p class="lead">We'll always let you know where you can find us, so come and say <strong>Hi!</strong>
         <img class="hero-image" src="images/cheersPose.png" alt="Moosha at the market" />
+        <p class="eyebrow">made with love & served with energy</p>
       </div>
     </section>
 
@@ -55,7 +56,7 @@
 
       <!-- Right: Market details -->
       <div class="card location-details-card">
-        <h2>Next Stop</h2>
+        <h2>Where you can find us</h2>
 
         <div class="location-meta">
           <p class="location-name"><strong></strong></p>
@@ -74,12 +75,7 @@
 
 
         <p class="muted location-note">
-          We move around, so check this page before you travel.
-        </p>
-        <p class="eyebrow">
-          Have an event coming up? moosha can help serve your guests with an unforgettable event that's full of flavour and energy!<br><br>
-          <a class="btn" href="mailto:hello@moosha.co.uk?subject=Event%20Enquiry"> <strong>Email us</strong> </a>to find out more.
-        </p>
+          We move around, so check this page before you travel.</p>We have BIG plans for <strong >Spring 2026!</strong><br>Check back soon...
       </div>
 
 <!-- connecting to goofle map -->      
@@ -96,12 +92,13 @@
 <!-- Page footer --> 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy">© <span id="year"></span> moosha ltd <br> Company No. 14851256 · Registered in England & Wales</p>
-
+      <p class="footer-copy">© <span id="year"></span> moosha ltd · Company No. 14851256 · Registered in England & Wales<br>Office 16716, 182-184 High Street North, East Ham, London, E6 2JA, United Kingdom</p>
       <div class="footer-links" aria-label="Social links">
+        <a href="about.html" rel="noopener">Contact Us</a>    
+        <a href="mailto:hello@moosha.co.uk" class="email-link" aria-label="Send us an email">Email</a>
         <a href="https://www.instagram.com/moosha.ltd" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@moosha.ltd" rel="noopener">TikTok</a>
-        <a href="mailto:hello@moosha.co.uk" class="email-link" aria-label="Send us an email">Email</a>
+        <!-- <a href="sitemap.xml" rel="noopener">Site Map</a>  -->        
 </a>
       </div>
     </div>
@@ -124,7 +121,16 @@
 
   </script>
 
-  <!-- Pin marker
+  
+
+
+
+
+      </div>
+    </div>
+  </footer>
+
+<!-- Pin marker
   L.marker([marketLat, marketLng]).addTo(map)
     .bindPopup("<strong>Moosha is here</strong><br>See you at the market!")
     .openPopup(); 
@@ -132,6 +138,5 @@
 
   <script> document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>

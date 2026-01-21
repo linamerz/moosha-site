@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>moosha | dirty soda bar serving London</title>
+  <title>moosha | dirty soda bar event bookings page</title>
   <meta name="description" content="delivering curated drinking experience across London" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="images/png" href="images/mainLogo.png">
 </head>
 
 <!-- Title, slogan, and menu bar -->
@@ -26,7 +26,7 @@
         <a class="nav__link"  href="index.html">Home</a>
         <a class="nav__link" href="menu.html">Menu</a>
         <a class="nav__link nav__link--active" href="events.html">Events</a>
-        <a class="nav__link" href="location.html">Next Stop</a>
+        <a class="nav__link" href="location.html">Find Us</a>
         <a class="nav__link" href="gallery.html">Gallery</a>
       </nav>
       <hr class="rule" />
@@ -37,17 +37,16 @@
     <section class="hero">
       <div class="hero-inner">
         <div class="page-intro">
-          <h1>book moosha for your upcoming event</h1>
-          <p class="lead">Tell us what you’re planning and we'll get the drinks ready, we are here to help you deliver an unforgettable event that's full of flavour and energy!
+          <h1>book moosha for your upcoming special occasion</h1>
+          <p class="lead">Tell us what you’re planning and we'll get the drinks ready!<br>Delivering an unforgettable drinking experience that's full of flavour and energy
             <img class="hero-image" src="images/toastPose.png" alt="moosha with part hat logo" >
-            <p>At moosha, we believe the best moments don’t need alcohol to be unforgettable.<br><br>Every drink we serve is completely non-alcoholic, crafted to bring people together, spark conversations, and create memories that everyone can be part of — from kids’ parties to corporate events and everything in between.</p>
-          </div>
+           <p class="eyebrow">made with love & served with energy</p>
 <!-- box contents - for caffiene warning --> 
 
 
   <div class="grid-2">
           <div class="card">
-            <h2>Before you book</h2>
+            <h2>Before You Book</h2>
             <p class="muted">
               Not sure what you need yet? No problem. <br>Give us the basics and we’ll guide you.<br>
             <p><strong>Notice: </strong>Due to the Zoomies drink menu containg a high level of caffiene. It is <strong>not recommended </strong>for children, pregnant individuals, or those sensitive to caffeine.
@@ -56,7 +55,7 @@
 
   <div class="grid-2">
           <div class="card">
-            <h2>Event enquiry form</h2>
+            <h2>Event Enquiry Form</h2>
 
 <!-- Netlify Forms Designed Form-->
            <form
@@ -140,15 +139,21 @@
 <!-- Page footer --> 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy">© <span id="year"></span> moosha ltd <br> Company No. 14851256 · Registered in England & Wales</p>
-
+      <p class="footer-copy">© <span id="year"></span> moosha ltd · Company No. 14851256 · Registered in England & Wales<br>Office 16716, 182-184 High Street North, East Ham, London, E6 2JA, United Kingdom</p>
       <div class="footer-links" aria-label="Social links">
+        <a href="about.html" rel="noopener">Contact Us</a>    
+        <a href="mailto:hello@moosha.co.uk" class="email-link" aria-label="Send us an email">Email</a>
         <a href="https://www.instagram.com/moosha.ltd" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@moosha.ltd" rel="noopener">TikTok</a>
-        <a href="mailto:hello@moosha.co.uk" class="email-link" aria-label="Send us an email">Email</a>
+        <!-- <a href="sitemap.xml" rel="noopener">Site Map</a>  -->        
+
+
+</a>
       </div>
     </div>
   </footer>
-  <script> document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <script> document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
