@@ -56,26 +56,34 @@
 
       <!-- Right: Market details -->
       <div class="card location-details-card">
-        <h2>Where you can find us</h2>
+        <h2>Where you can find us next</h2>
+
+        <div class="muted location-note">
+          We pop up in different places, so check here before you travel.
+        </div>
 
         <div class="location-meta">
           <p class="location-name"><strong></strong></p>
-  <!-- Right: Market details 
-          <p class="muted">Market address line, London, Postcode</p>
+  <!-- Right: Market details -->
+          <p class="muted"><strong>West Norwood Picturehouse</strong><br>1-7 Norwood High Street<br>London<br>SE27 9JU
         </div>
 
         <div class="location-times">
           <h3>When to catch us</h3>
           <ul class="list">
-            <li style=""><strong>Saturday:</strong> 10:00–16:00</li>
-            <li><strong>Sunday:</strong> 11:00–15:00</li>
+            <li>
+              <strong>West Norwood Picturehouse</strong><br>4-5 April 2026: 11:00-18:00</li><br>
+            <li>
+              <strong>Foodies Festival: Preston Park, Brighton</strong><br>2 May 2026: 11:00-21:00</li><br>
+            <li>
+              <strong>Foodies Festival: Syon Park, London</strong><br>23-25 May 2026: 11:00-21:00</li><br>
+            <li>
+              <strong>Foodies Festival: South Park, Oxford</strong><br>29-31 August 2026: 11:00-21:00</li>
           </ul>
-        </div>-->
+        </div>
 
-
-
-        <p class="muted location-note">
-          We move around, so check this page before you travel.</p>We have BIG plans for <strong >Spring 2026!</strong><br>Check back soon...
+        <div class="muted location-note"><p><br>More locations and dates will be announced soon...
+        </div>
       </div>
 
 <!-- connecting to goofle map -->      
@@ -108,8 +116,8 @@
 
   <!-- location coordinates here --> 
   <script>
-  const marketLat = 51.5074;
-  const marketLng = -0.1278;
+  const marketLat = 51.433122;
+  const marketLng = -0.103287;
 
   // Create map
   const map = L.map("map", { scrollWheelZoom: false }).setView([marketLat, marketLng], 14);
@@ -121,22 +129,15 @@
 
   </script>
 
-  
-
-
-
-
-      </div>
-    </div>
-  </footer>
-
-<!-- Pin marker
+  <!-- Pin marker -->
+  <script>
   L.marker([marketLat, marketLng]).addTo(map)
-    .bindPopup("<strong>Moosha is here</strong><br>See you at the market!")
+    .bindPopup("<strong>moosha will be here</strong><br><br>Saturday 4 April 2026<br>11:00–18:00<br><br>Sunday 5 April 2026<br>11:00–18:00")
     .openPopup(); 
-</script>-->
+</script>
 
   <script> document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
   </script>
 </body>
 </html>

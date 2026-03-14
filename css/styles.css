@@ -250,9 +250,9 @@ main {
 }
 
 .list {
-  margin: 0;
-  padding-left: 1.1rem;
-  text-align: left;
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 .muted a:hover {
